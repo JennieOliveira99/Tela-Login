@@ -10,13 +10,34 @@
 /* alterando bg, fontes etc*/
     
 body{
-    background-color: #33005c;
+    background: linear-gradient(
+        to left, #2d0048, #dd1bff,#4de6f6
+    );
+
     width: 1310px;
     
     font-family: 'Alexandria', Arial, Helvetica, sans-serif;
 
 }
 
+h1 {
+    font-size: 72px;
+    margin-left: 350px;
+    margin-top: 100px;
+    background: linear-gradient(#fff, #fec166, #fff
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+/*h1 {
+    font-size: 72px;
+    background: linear-gradient(
+        270deg, #3f5efb, #fc466b
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}*/
    
 .aside_login{
     float: left;
@@ -36,22 +57,23 @@ form{
     display: flex;
     flex-direction: column;
     width: auto;
-    color: #fec166;
-   
-    border: 0.5px solid #FFF78C;
+    color: white;
+    font-weight: initial;
     padding: 20px;
     border-radius: 10px;
-    margin-top: 60px;
-    margin-bottom: 10px;
+    margin-top: 50px;
 }
+
+
 
 label {
     padding-right: 15px;
     padding-bottom: 20px;
     margin-top: 60px;
     padding: 12px 12px 12px 0;
-    margin-top: 50px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
 }
 
 
@@ -64,23 +86,26 @@ form [type="email"]{
     border-radius: 4px;
     background-color: #440074;
     resize: none;
-    margin-top: 60px;
+    /* espaço entre email e mensagem*/
+    margin-top: 15px;
+    margin-bottom: 15px;
    
     
 }
 
-
+  /* nome*/
 form [type="text"] {
     width: 100%;
-    height: 50px;
-    padding: 20px 20px;
+    height: 0px;
+    padding: 12px 20px;
     box-sizing: border-box;
     border: 0.5px solid #fec166;
     border-radius: 4px;
     background-color: #440074;
     resize: none;
-    margin-top: 60px;
-    margin-bottom: 10px;
+    /* espaço entre nome e email*/
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 
@@ -92,9 +117,9 @@ button {
   }
   
   .custom-btn {
-    width: 130px;
+    width: 150px;
     height: 40px;
-    color: #fff;
+    color: rgb(0, 0, 0);
     border-radius: 5px;
     padding: 15px 25px;
     font-family: 'Lato', sans-serif;
@@ -112,7 +137,7 @@ button {
   
   .btn-1 {
     position: relative;
-    right: 20px;
+    right:0px;
     bottom: 20px;
     border:none;
     box-shadow: none;
@@ -124,10 +149,10 @@ button {
   }
   .btn-1 span {
     background: rgb(215, 222, 224);
-    background: linear-gradient(0deg, #440074 0%, #fec166 100%);
+    background: linear-gradient(0deg, #fd577b 0%, #fec166 100%);
     display: block;
     position: absolute;
-    width: 150px;
+    width: 170px;
     height: 40px;
     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
      7px 7px 20px 0px rgba(0,0,0,.1),
