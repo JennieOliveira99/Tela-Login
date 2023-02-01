@@ -13,28 +13,20 @@ body{
     background: linear-gradient(
     to left, #2d0048, #dd1bff,#4de6f6);
     font-family: 'Alexandria', Arial, Helvetica, sans-serif;
-
+    overflow: hidden;
 }
 
 h1 {
     font-size: 72px;
     margin-left: 250px;
     margin-top: 100px;
-    background: linear-gradient(#fff, #fec166, #fff
+    background: linear-gradient( #fec166, #dd1bff
         );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 }
 
-img {
-    display: block;
-    float: right;
-    margin-right: 50px;
-    width: 500px;
 
-    
-
-}
 
 .aside_login{
     float: left;
@@ -221,3 +213,60 @@ article{
     margin-top: 0px;
     margin-bottom: 1px;
 }
+
+/*card*/
+
+
+.flip-card {
+ 
+    float: right;
+    margin-right: 50px;
+    width: 500px;
+    /*card size*/
+    height: 400px;
+    perspective: 1000px;
+    background-color: transparent;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 16px;
+  }
+  .flip-card-front {
+    background-image: linear-gradient(45deg, #6f04d9, #d9048e);
+  }
+  .flip-card-front img {
+    width: 300px;
+    margin-top: 1rem;
+  }
+  .flip-card-back {
+    background-image: linear-gradient(315deg, #6f04d9, #8a045c);
+    color: #ffffff;
+    transform: rotateY(180deg);
+  }
+  .flip-card-back img {
+    width: 300px;
+    margin-top: 1rem;
+  }
+  .flip-card-back h3 {
+    margin-bottom: 0.3rem;
+  }
+  .flip-card-back h1 {
+    margin: 1;
+  }
