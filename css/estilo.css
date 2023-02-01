@@ -11,18 +11,14 @@
     
 body{
     background: linear-gradient(
-        to left, #2d0048, #dd1bff,#4de6f6
-    );
-
-    width: 1310px;
-    
+    to left, #2d0048, #dd1bff,#4de6f6);
     font-family: 'Alexandria', Arial, Helvetica, sans-serif;
 
 }
 
 h1 {
     font-size: 72px;
-    margin-left: 350px;
+    margin-left: 250px;
     margin-top: 100px;
     background: linear-gradient(#fff, #fec166, #fff
         );
@@ -30,15 +26,16 @@ h1 {
         -webkit-text-fill-color: transparent;
 }
 
-/*h1 {
-    font-size: 72px;
-    background: linear-gradient(
-        270deg, #3f5efb, #fc466b
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-}*/
-   
+img {
+    display: block;
+    float: right;
+    margin-right: 50px;
+    width: 500px;
+
+    
+
+}
+
 .aside_login{
     float: left;
     margin-bottom: 100px;
@@ -53,12 +50,14 @@ h1 {
     
 }
 
+/*textinhos*/
+
 form{
     display: flex;
     flex-direction: column;
     width: auto;
-    color: white;
-    font-weight: initial;
+    color: #2d0048;
+    font-weight: bold;
     padding: 20px;
     border-radius: 10px;
     margin-top: 50px;
@@ -82,44 +81,50 @@ form [type="email"]{
     height: 30px;
     padding: 12px 20px;
     box-sizing: border-box;
-    border: 0.5px solid #fec166;
+    border: 0.5px solid #2d0048;
     border-radius: 4px;
-    background-color: #440074;
+    background-color: transparent;
     resize: none;
-    /* espaço entre email e mensagem*/
     margin-top: 15px;
     margin-bottom: 15px;
    
     
 }
 
-  /* nome*/
+  /* senha*/
 form [type="text"] {
     width: 100%;
     height: 0px;
     padding: 12px 20px;
     box-sizing: border-box;
-    border: 0.5px solid #fec166;
+    border: 0.5px solid #2d0048;
     border-radius: 4px;
-    background-color: #440074;
+    background-color: transparent;
     resize: none;
-    /* espaço entre nome e email*/
+    /* espaço entre senha e radio*/
     margin-top: 10px;
     margin-bottom: 15px;
 }
+
+form [type="radio"] {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
 
 
 /* aqui começa o botao*/
 
 button {
-    margin: 100px;
-    
+    margin-top: 20px;
+    margin-bottom: 15px;
+ 
   }
   
   .custom-btn {
     width: 150px;
     height: 40px;
-    color: rgb(0, 0, 0);
+    color: #2d0048(0, 0, 0);
     border-radius: 5px;
     padding: 15px 25px;
     font-family: 'Lato', sans-serif;
@@ -204,4 +209,15 @@ button {
     -moz-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
   }
-  
+
+  /*links*/
+
+article{
+    margin-left: 20px;
+    float: left;
+    width: 100%;
+    height: 20px;
+    padding: 12px 20px;
+    margin-top: 0px;
+    margin-bottom: 1px;
+}
